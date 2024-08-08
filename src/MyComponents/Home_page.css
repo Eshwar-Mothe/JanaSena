@@ -1,0 +1,333 @@
+.body {
+    background-color: #091540;
+    height: 10vh;
+    font-family: "roboto", "sans-serif";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo_gallery {
+    position: relative;
+    width: 10%;
+    display: flex;
+
+}
+
+.video_gallery {
+    margin-top: 1rem;
+    display: grid;
+}
+
+.photo_gallery img {
+    width: 9rem;
+    height: 7rem;
+    margin-left: .1rem;
+
+}
+
+.video_gallery video {
+    width: 9rem;
+    height: 10rem;
+    margin-left: .1rem;
+}
+
+
+.heading {
+    background: rgb(255, 255, 255);
+    text-align: center;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 2vh;
+    color: rgb(255, 0, 0);
+    margin-top: 0.5vh;
+    /* z-index: -1; */
+}
+
+.card_box[Photo_gal] {
+    width: 25%;
+    display: inline-block;
+    margin: 0 0 24px;
+    text-align: center;
+    /* z-index: 1; */
+}
+
+.card[Photo_gal] {
+    width: 100%;
+    display: inline-block;
+    max-width: 224px;
+    position: relative;
+    margin-top: 2.5vh;
+}
+
+.card_normal[Photo_gal] {
+    float: left;
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, .4);
+    vertical-align: top;
+    box-sizing: border-box
+}
+
+.card[Photo_gal] .card_left[Photo_gal],
+.card[Photo_gal] .card_right[Photo_gal] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    float: left;
+    width: 100%;
+    opacity: 0;
+    transition: .35s ease-in-out;
+    padding: 5px;
+    background: #fff;
+    vertical-align: top;
+    box-sizing: border-box
+}
+
+.card[Photo_gal]:hover .card_left[Photo_gal] {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    opacity: 1
+}
+
+.card[Photo_gal]:hover .card_right[Photo_gal] {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    opacity: 1
+}
+
+.image[Photo_gal] {
+    width: 100%;
+    height: 120px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer
+}
+
+.image[Photo_gal]:before {
+    content: '';
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, .2) 0 0 10px 3px inset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.image[Photo_gal] img[Photo_gal] {
+    width: 100%;
+    min-height: 100%
+}
+
+.title[Photo_gal] {
+    width: 100%;
+    float: left;
+    padding: 0 6px;
+    height: 2.6em;
+    font-weight: 600;
+    font-size: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    line-height: 1.3;
+    margin: 10px 0;
+    -webkit-line-clamp: 2
+}
+
+.date_share[Photo_gal] {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #d6d5d5;
+    /* padding: 6px 6px 1px; */
+    box-sizing: border-box
+}
+
+.date[Photo_gal] {
+    float: left;
+    width: 50%;
+    color: #4c4141;
+    /* line-height: 18px; */
+    font-size: 12px;
+    text-align: left
+}
+
+.share[Photo_gal] {
+    float: right;
+    width: 50%;
+    text-align: right
+}
+
+.share[Photo_gal] {
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer
+}
+
+.share[Photo_gal] img[Photo_gal] {
+    width: 18px
+}
+
+.card_box .title {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+@media only screen and (min-width:768px) and (max-width:1000px) {
+    .card_box[Photo_gal] {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 15px
+    }
+
+    .card[Photo_gal] {
+        max-width: 300px
+    }
+
+    .image[Photo_gal] {
+        height: 180px
+    }
+
+    #maincontent[Photo_gal] {
+        height: auto;
+        padding-bottom: 30px;
+        max-height: 10000px
+    }
+
+    .home_container[Photo_gal]::before {
+        background-size: auto 100%
+    }
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 7vw;
+    gap: 15px;
+    margin-bottom: .5rem;
+    /* float: left; */
+
+}
+
+YouTube {
+    display: flex;
+}
+
+/* .searchactive[_nghost-c4] .bg_animations[Photo_gal],
+.searchactive [_nghost-c4] .bg_animations[Photo_gal] {
+    display: none
+} */
+
+@media only screen and (max-width:767px) {
+    .date[Photo_gal] {
+        line-height: 28px !important;
+        font-size: 14px !important
+    }
+
+    .share[Photo_gal] img[Photo_gal] {
+        width: 28px !important
+    }
+
+    .card[Photo_gal]:hover .card_left[Photo_gal],
+    .card[Photo_gal]:hover .card_right[Photo_gal] {
+        display: none
+    }
+
+    .card_box[Photo_gal] {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 15px;
+        border-radius: 35px;
+    }
+
+    .card[Photo_gal] {
+        max-width: 100%
+    }
+
+    .image[Photo_gal] {
+        height: 180px
+    }
+
+    /* #maincontent[Photo_gal] {
+        height: auto;
+        padding-bottom: 30px
+    }
+
+    .home_container[Photo_gal]::before {
+        background-size: auto 100%
+    } */
+
+}
+
+@media (max-width: 740px) {
+    .heading {
+        /* width: 1rem; */
+        font-size: 15px;
+        margin: 0.1vh;
+        padding: 0.1vh;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+    }
+
+    .videos {
+        /* width: 100%;
+        height: 50%;
+        margin: 5px;
+        clear: both;
+        display: flex;
+        flex-direction: column;*/
+        overflow: scroll;
+        width: 100%;
+    }
+
+
+}
+
+.heading span {
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    margin: 2vh, ;
+    padding: 1vh;
+    text-align: center;
+}
+
+.video_container .videos {
+    float: left;
+    margin: 0.5rem;
+    /* overflow: scroll; */
+    /* width: 5rem; */
+
+}
+
+/* .video_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* Example margin 
+} */
+
+/* .videos {
+    width: 50%;
+    /* Example width for each video 
+    margin: 10px;
+    /* Example margin between videos 
+} */
+
+/* Media query for mobile screens */

@@ -1,0 +1,551 @@
+body {
+    background-color: rgb(252, 225, 193);
+    /* background-image: url(blackNW.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 40%; */
+}
+
+.head {
+    color: rgb(82, 41, 41);
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* p {
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: beige;
+} */
+
+.flex-container,
+.karimnagar {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: antiquewhite; */
+    margin-left: 1.4rem;
+}
+
+.flex-container a,
+.karimnagar a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex-container a:hover,
+.karimnagar a:hover {
+    color: red;
+    border-color: aliceblue;
+    border-width: 3px;
+    transition: .2s ease-in;
+}
+
+.flex-container a {
+    width: 16rem;
+    margin: AUTO;
+    margin-top: 5px;
+    margin-left: auto;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: AUTO;
+    font-weight: bold;
+    border: 2px solid silver;
+    border-radius: 20px;
+    text-align: center;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.karimnagar a {
+    width: 17rem;
+    margin: 13px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid silver;
+    border-radius: 9px;
+    text-align: center;
+    background-color: burlywood;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form {
+    /* border: 2px solid silver; */
+    width: 65%;
+    height: 70rem;
+    float: left;
+    line-height: 2rem;
+}
+
+.advantages {
+    width: 33%;
+    height: 70rem;
+    margin-left: 66%;
+    line-height: 2rem;
+    border: 2px solid silver;
+    padding: 5px;
+}
+
+.village1 option {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.form {
+    display: flex;
+    clear: both;
+    flex-direction: column;
+    width: 65%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
+    margin-left: 5rem;
+}
+
+.form label,
+.form input,
+.form select {
+    margin-left: 30px;
+    width: 45%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form select {
+    width: 90%;
+}
+
+.form input {
+    margin-right: -1rem;
+}
+
+.form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+.form p {
+    margin-left: 5rem;
+}
+
+.form #firstspan {
+    margin-left: -4rem;
+}
+
+.advantages {
+    margin-top: 20px;
+}
+
+.advantages h4 {
+    color: #4CAF50;
+}
+
+.advantages li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.form .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form #photo {
+    line-height: 8rem;
+    font-weight: bold;
+    width: 10rem;
+    height: 10rem;
+    margin-left: 44%;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+#photo a {
+    text-decoration: none;
+    color: red;
+}
+
+#photo {
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#preview {
+    margin-top: 10px;
+}
+
+button {
+    margin-left: 70px;
+}
+
+button {
+    margin-top: 70px;
+}
+
+
+/* Admin Login Styles */
+
+.admin,
+.member {
+    float: left;
+    background-color: rgba(255, 255, 255, 0);
+    width: 48%;
+    height: 30rem;
+    border: 2px solid rgb(68, 24, 24);
+    /* margin-top: 20px; */
+    overflow: hidden;
+}
+
+.member {
+    float: right;
+    background-color: rgb(255, 255, 255);
+}
+
+.admin a,
+.member a {
+    text-decoration: none;
+    color: rgb(58, 23, 23);
+    font-size: 20px;
+}
+
+.admin button,
+.member button {
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(201, 197, 197);
+    border: none;
+    /* background: none; */
+    padding: 15px;
+    margin-left: 15rem;
+    /* margin-bottom: 5rem; */
+    margin-top: 5rem;
+
+}
+
+.admin button {
+    margin-top: 10rem;
+    width: 30%;
+    margin-left: 34%;
+}
+
+.member button {
+    margin-left: 18rem;
+}
+
+.arrow-container {
+    /* position: fixed; */
+    bottom: 20px;
+    margin-top: 10%;
+    margin-left: 48%;
+    transform: translateX(-50%);
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #333;
+    /* Change the color as needed */
+}
+
+
+/* Loginform */
+
+.login-form {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(206, 64, 64);
+    padding: 3rem;
+    margin-left: 15%;
+    margin-top: 5%;
+
+}
+
+.login-form button {
+    background-color: red;
+    border-color: red;
+    margin-left: 8rem;
+
+}
+
+.login-form button:hover {
+    background-color: red;
+}
+
+.login-form p {
+    color: red;
+    /* font-weight: bold; */
+}
+
+.login-form input {
+    border-style: none none solid none;
+    width: 50%;
+    border-color: red;
+}
+
+#gridCheck1 {
+    width: 15px;
+    border-style: solid;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ff0000;
+    /* Change background color when checked */
+    color: white;
+    /* Change text color when checked */
+    border: 2px solid #f32121;
+    /* Add a border when checked */
+    /* Add any other styles you want for the checked state */
+
+}
+
+#inputEmail3:focus {
+    border: 2px solid #ff0000;
+    border-style: none none solid none;
+    outline: none !important;
+
+
+    /* Set the border color when focused */
+    /* Add any other styles you want for the focused state */
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(50px);
+    }
+
+    60% {
+        transform: translateY(15px);
+    }
+}
+
+.flex-container a {
+    transition: 1s ease-in-out;
+    /* Add smooth color transition */
+}
+
+.admin p,
+.member p {
+    color: white;
+    background-color: rgb(199, 58, 58);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.admin p:nth-child(2),
+.member p:nth-child(2) {
+
+    background: none;
+    text-align: left;
+    text-transform: capitalize;
+    color: rgb(73, 33, 33);
+}
+
+.member p:nth-child(2) {
+    float: right;
+}
+
+marquee {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.main_class {
+    display: 'flex';
+    flex-wrap: 'wrap';
+    background-color: red;
+}
+
+.mandals {
+    border: '1px solid rgb(255, 0, 0)';
+    margin: '10px';
+    padding: '10px';
+    border-radius: '8px';
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+
+    .karimnagar a {
+        width: 9rem;
+        font-size: 13px;
+        /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .karimnagar a {
+        margin: 10px;
+        margin-top: 8px;
+        margin-left: 5px;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 10px;
+        /* width: 28% !important; */
+        /* Adjust for smaller screens */
+    }
+
+    .flex-container a {
+        width: 11rem;
+        margin: AUTO;
+        margin-top: 10px;
+        /* margin-left: 15px; */
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 8PX;
+        font-weight: bold;
+        border: 2px solid silver;
+        border-radius: 9px;
+        text-align: center;
+        background-color: burlywood;
+        cursor: pointer;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .karimnagar a {
+        margin-top: 7px;
+        margin-left: -5px;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 9px;
+        width: 5rem !important;
+
+
+        /* Adjust for smaller screens */
+    }
+
+    .karimnagar {
+        margin-left: 2.5rem;
+    }
+
+    .flex-container a {
+        transition: color 1s ease-in-out;
+        align-items: center;
+        justify-content: space-around;
+        /* Add smooth color transition */
+    }
+
+    .form {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .form input {
+        float: right;
+        width: 85%;
+        margin: 5px;
+    }
+
+    form label {
+        float: left;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    .form #firstspan {
+        margin-left: 1rem;
+    }
+}
+
+
+@media (max-width: 100vh) {
+
+    .admin,
+    .member {
+        float: none;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+
+    .member button {
+        margin-left: 30%;
+        width: 40%;
+    }
+
+    .admin button {
+        margin-top: 10%;
+    }
+
+    .arrow {
+        margin-left: -8%;
+    }
+
+    .login-form {
+        width: 70%;
+        /* height: 80%; */
+        align-items: center;
+        justify-content: center;
+        border: 2px solid silver;
+        padding: 3rem;
+        margin-left: 15%;
+        margin-top: 5%;
+        position: absolute;
+    }
+
+    .login-form button {
+        background-color: red;
+        border-color: red;
+        margin-left: .8rem;
+
+    }
+
+    .login-form input {
+        border-style: none none solid none;
+        width: 100%;
+    }
+
+    #gridCheck1 {
+        width: 15px;
+        border-style: solid;
+    }
+
+}

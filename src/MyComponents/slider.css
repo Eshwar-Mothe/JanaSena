@@ -1,0 +1,9 @@
+.d-block {
+    height: 30vw;
+}
+
+@media (max-width: 720px) {
+    .d-block {
+        height: 10rem;
+    }
+}

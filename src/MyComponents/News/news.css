@@ -1,0 +1,89 @@
+.headingLines {
+    float: right;
+}
+
+.headingCard {
+    border: 2px solid red;
+    width: 50%;
+    height: 25rem;
+}
+
+.heading-image {
+    width: 99%;
+    height: 15rem;
+    margin-left: .5%;
+}
+
+.admin-sidebar {
+    width: 250px;
+    /* Adjust the width as per your design */
+    height: calc(80vh - 100px);
+    /* Adjust the height according to your header and footer heights */
+    position: fixed;
+    top: 100px;
+    /* Adjust according to your header height */
+    left: -250px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    /* Ensure the sidebar is above the main content */
+}
+
+.admin-sidebar.open {
+    left: 0;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    /* Adjust the position as per your design */
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    z-index: 1002;
+    /* Ensure the toggle button is above the sidebar */
+    transition: transform 0.3s ease;
+    /* Apply transition for smooth rotation */
+}
+
+.toggle-btn.rotate {
+    transform: rotate(45deg);
+    /* Rotate the button to turn into a plus sign */
+    transition-delay: 0.1s;
+    /* Add delay to transition after closing */
+}
+
+
+.toggle-btn:hover {
+    background-color: #f01111;
+}
+
+.toggle-btn.open {
+    background-color: #fff;
+    color: #ff0000;
+    /* Red color when the sidebar is open */
+}
+
+.toggle-btn.close {
+    background-color: #ff0000;
+    /* Red background when the sidebar is closed */
+    color: #fff;
+}
+
+.links {
+    color: #fc0000;
+    font-weight: bold;
+}
+
+.links:hover {
+    color: #810909;
+    transform: scale(1.1);
+    text-shadow: #f01111;
+    transition: 0.5s ease-in-out;
+}
+
+/* Add any other styles as needed */

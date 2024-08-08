@@ -1,0 +1,173 @@
+:root {
+    --textColor: red;
+    --buttonColor: #ffc400;
+    --bgColor: #2d618c;
+    --HHwidth: 75%;
+    --HHmarginLeft: 11%;
+    --headingFont: 20px;
+}
+
+#background-main {
+    height: 95px;
+}
+
+.nav-bar {
+    position: relative;
+    float: right;
+    display: block;
+    padding: 15px;
+    font-size: 25px;
+    float: right;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--textColor);
+
+}
+
+img {
+    position: absolute;
+    height: 20vh;
+    width: 40vh;
+}
+
+.logo img {
+    /* margin-left: 0px; */
+    margin-top: -10px;
+}
+
+.logo button {
+    border-radius: 10px;
+}
+
+.nav-bar a:hover {
+    display: inline-block;
+    transition: .1s ease-in-out;
+    border-style: none none solid none;
+    border-width: 2px;
+    border-color: orange;
+}
+
+.gallery {
+    height: 35rem;
+}
+
+.gallery img {
+    margin-top: 1rem;
+    background-color: #1a3b57;
+    width: 97%;
+    height: 32rem;
+    margin-left: 1%;
+}
+
+.gallery .first {
+    background-color: white;
+    width: 97%;
+}
+
+.gallery .second {
+    display: none;
+    width: 97%;
+
+}
+
+.gallery .third {
+    display: none;
+    width: 97%;
+}
+
+.gallery .fourth {
+    display: none;
+    width: 97%;
+}
+
+.gallery .fifth {
+    display: none;
+    width: 97%;
+}
+
+.gallery button {
+    margin-top: 15rem;
+    margin-left: 1.5rem;
+    border-radius: 7px;
+    width: 30px;
+    font-size: 17px;
+    border: none;
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    display: none;
+}
+
+.gallery #show_first {
+    margin-left: 15rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-bar {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    img {
+        height: auto;
+        width: 50%;
+    }
+
+    .background-main {
+        margin-bottom: 12rem;
+    }
+
+    .gallery img {
+        margin-top: 3rem;
+        height: auto;
+    }
+
+    .gallery button {
+        margin-top: 0.5rem;
+        margin-left: 0.3rem;
+        display: none;
+    }
+
+    .gallery #show_first {
+        margin-left: 0.5rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    /* Adjust styles for tablets */
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    /* Adjust styles for smaller screens */
+}
+
+/* Small mobile devices */
+@media (max-width: 320px) {
+    /* Further adjustments for smaller screens */
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        height: auto;
+        /* You can adjust this based on your design */
+        max-width: 100%;
+        /* Ensures the gallery takes full width on smaller screens */
+        margin-top: -2rem;
+    }
+
+    #background-main {
+        margin-top: 5px;
+    }
+
+    #background-main img {
+        margin-top: -5px;
+        width: 34%;
+        height: 70px;
+    }
+}
