@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/JanaSena/static/css/main.788f587a.css",
+    "main.js": "/JanaSena/static/js/main.bc094c94.js",
+    "static/js/787.551ef818.chunk.js": "/JanaSena/static/js/787.551ef818.chunk.js",
+    "static/media/samp5.jpg": "/JanaSena/static/media/samp5.af2a283432ba41f78db3.jpg",
+    "static/media/samp1.jpg": "/JanaSena/static/media/samp1.746451e4e847d7b51387.jpg",
+    "static/media/samp3.jpg": "/JanaSena/static/media/samp3.79806c3c3d16059e24c8.jpg",
+    "static/media/samp2.jpg": "/JanaSena/static/media/samp2.aed51cc4077e37af0a39.jpg",
+    "static/media/samp4.jpg": "/JanaSena/static/media/samp4.682ea178742503d964f4.jpg",
+    "static/media/admin.jpg": "/JanaSena/static/media/admin.1eca4123193faa873a5f.jpg",
+    "static/media/loginBG.jpg": "/JanaSena/static/media/loginBG.5d48bfefc15b59a11988.jpg",
+    "index.html": "/JanaSena/index.html",
+    "static/media/LoginBg.svg": "/JanaSena/static/media/LoginBg.f13b7814fd4403f8b99a.svg",
+    "main.788f587a.css.map": "/JanaSena/static/css/main.788f587a.css.map",
+    "main.bc094c94.js.map": "/JanaSena/static/js/main.bc094c94.js.map",
+    "787.551ef818.chunk.js.map": "/JanaSena/static/js/787.551ef818.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.788f587a.css",
+    "static/js/main.bc094c94.js"
+  ]
+}
