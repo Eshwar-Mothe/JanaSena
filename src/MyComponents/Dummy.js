@@ -9,10 +9,11 @@ const VideoGallery = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                const apiKey = process.env.REACT_APP_API_KEY;
                 const response = await axios.get(
                     'https://www.googleapis.com/youtube/v3/search', {
                     params: {
-                        key: 'AIzaSyC997gsijpcfRQkghU-LbxQ17y4pOZwDLc',
+                        key: apiKey,
                         part: 'snippet',
                         maxResults: 12,
                         order: 'date',
