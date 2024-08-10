@@ -92,12 +92,12 @@ function App() {
           <Route exact path="/PublicImages" element={<PublicImages />}></Route>
           <Route exact path="/EventImages" element={<EventImages />}></Route>
           <Route exact path="/IssuesImages" element={<IssuesImages />}></Route>
-          <Route exact path="/VideoGallery" element={<VideoGallery />}></Route>
+          <Route exact path="/VideoGallery" element={<Dummy />}></Route>
           <Route exact path="/Adminpanel" element={<AdminPage />}></Route>
           <Route exact path="/Adminpanel/joinings" element={<Todos todos={todos} onDelete={onDelete} />}></Route>
           <Route exact path='/Adminpanel/AdminPost' element={<AdminPost />}></Route>
           <Route exact path='/Adminpanel/district' element={<UserChoice />}></Route>
-          <Route exact path='/news' element={<Dummy />}></Route>
+          <Route exact path='/news' element={<VideoGallery />}></Route>
         </Routes>
         <Footer />
       </Router>
